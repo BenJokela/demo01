@@ -19,7 +19,14 @@ namespace GitTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Yahoo!");
+            if (checkBox1.Checked == false)
+            {
+                MessageBox.Show("You forgot to check");
+            }
+            else
+            {
+                MessageBox.Show("Yahoo! You did it!");
+            }
         }
     }
 }
